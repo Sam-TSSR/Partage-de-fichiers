@@ -16,14 +16,14 @@
 - Ouvrez PowerShell et entrez cette commande pour créer un partage SMB pour le dossier "Documents_Entreprise":
   
   ```powershell
-  New-SmbShare -Name "Docs" -Path "C:\Documents_Entreprise" -FullAccess "Tout le monde"
+  New-SmbShare -Name "Docs" -Path "C:\Documents_Entreprise" -FullAccess "Everyone"
 
 ### 4. Création des sous-dossiers
 
 - Créez trois sous-dossiers dans "Documents_Entreprise" :
-"RH"
-"Comptabilité"
-"Direction"
+ - "RH"
+ - "Comptabilité"
+ - "Direction"
 
 ### 5. Configuration des permissions
 
@@ -49,7 +49,7 @@
 - Sur un poste client Windows 10, configure un lecteur réseau pointant vers ce partage via PowerShell :
 
   ```powershell
-  New-PSDrive -Name "Z" -PSProvider FileSystem -Root "\\Nom_Serveur\Docs" -Persist
+  New-PSDrive -Name "Z" -PSProvider FileSystem -Root "\\WinServer2022\Docs" -Persist
 
 - Vous pouvez vérifier les lecteurs mappés avec cette commande :
 
