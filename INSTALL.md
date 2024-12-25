@@ -35,7 +35,7 @@
   - Tous les utilisateurs du domaine ont un accès en lecture seule au dossier "Documents_Entreprise".
 
   ```powershell
-  Set-Acl -Path "C:\Documents_Entreprise\RH" -AclObject (Get-Acl "C:\Documents_Entreprise\RH" | Add-AccessRule (New-Object System.Security.AccessControl.FileSystemAccessRule("RH", "FullControl",  "ContainerInherit, ObjectInherit", "None", "Allow")))
+  Set-Acl -Path "C:\Documents_Entreprise\RH" -AclObject (Get-Acl "C:\Documents_Entreprise\RH" | Add-AccessRule (New-Object System.Security.AccessControl.FileSystemAccessRule("RH", "FullControl",  "ContainerInherit", "ObjectInherit", "None", "Allow")))
 
 ### 6. Liste des partages SMB
 
