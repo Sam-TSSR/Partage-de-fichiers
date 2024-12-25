@@ -21,9 +21,9 @@
 ### 4. Création des sous-dossiers
 
 - Créez trois sous-dossiers dans "Documents_Entreprise" :
- - "RH"
- - "Comptabilité"
- - "Direction"
+  - "RH"
+  - "Comptabilité"
+  - "Direction"
 
 ### 5. Configuration des permissions
 
